@@ -13,7 +13,7 @@
   <body>
     <div class="container">
     <h1>Calculator</h1>
-    <form id="add"> <!-- Addition -->
+    <form id="calculator"> <!-- Addition -->
       <div class="form-group">
         <label for="add1">1st number:</label>
         <input id="add1" class="form-control" type="text">
@@ -22,45 +22,34 @@
         <label for="add2">2nd number:</label>
         <input id="add2" class="form-control" type="text">
       </div>
-      <button type="submit" class="btn btn-primary">Add!</button>
+      <button type="submit" class="btn btn-primary">Calculate!</button>
       <div><span id="output"></span></div>
-    </form> <!-- End Addition -->
-    <form id="subtract"> <!-- Subtraction -->
-      <div class="form-group">
-        <label for="sub1">1st number:</label>
-        <input id="sub1" class="form-control" type="text">
-      </div>
-      <div class="form-group">
-        <label for="sub2">2nd number:</label>
-        <input id="sub2" class="form-control" type="text">
-      </div>
-      <button type="submit" class="btn btn-primary">Subtract!</button>
-      <div><span id="output2"></span></div>
-    </form> <!-- End Subtraction -->
-    <form id="multiply"> <!-- Multiplication -->
-      <div class="form-group">
-        <label for="mul1">1st number:</label>
-        <input id="mul1" class="form-control" type="text">
-      </div>
-      <div class="form-group">
-        <label for="mul2">2nd number:</label>
-        <input id="mul2" class="form-control" type="text">
-      </div>
-      <button type="submit" class="btn btn-primary">Multiply!</button>
-      <div><span id="output3"></span></div>
-    </form> <!-- End Multiplication -->
-        <form id="remainder"> <!-- Remainder -->
-      <div class="form-group">
-        <label for="remain1">1st number:</label>
-        <input id="remain1" class="form-control" type="text">
-      </div>
-      <div class="form-group">
-        <label for="remain2">2nd number:</label>
-        <input id="remain2" class="form-control" type="text">
-      </div>
-      <button type="submit" class="btn btn-primary">Remainder!</button>
-      <div><span id="output4"></span></div>
-    </form> <!-- End Remainder -->
+    
+    <div class="radio">
+      <label>
+        <input type="radio" name="operator" value="add" checked>
+        add
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="operator" value="subtract">
+        subtract
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="operator" value="multiply">
+        multiply
+      </label>
+    </div>        
+    <div class="radio">
+      <label>
+        <input type="radio" name="operator" value="divide">
+        divide
+      </label>
+    </div>
+  </form>
     
   </div>
     <script src="js/index.js"></script>
