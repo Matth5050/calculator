@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link src="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link src="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/index.js"></script>
     <title>Document</title>
   </head>
   <body>
+    <div class="container">
     <h1>Calculator</h1>
     <form id="add"> <!-- Addition -->
       <div class="form-group">
@@ -21,7 +22,8 @@
         <label for="add2">2nd number:</label>
         <input id="add2" class="form-control" type="text">
       </div>
-      <button type="submit" class="btn">Add!</button>
+      <button type="submit" class="btn btn-primary">Add!</button>
+      <div><span id="output"></span></div>
     </form> <!-- End Addition -->
     <form id="subtract"> <!-- Subtraction -->
       <div class="form-group">
@@ -32,7 +34,8 @@
         <label for="sub2">2nd number:</label>
         <input id="sub2" class="form-control" type="text">
       </div>
-      <button type="submit" class="btn">Subtract!</button>
+      <button type="submit" class="btn btn-primary">Subtract!</button>
+      <div><span id="output2"></span></div>
     </form> <!-- End Subtraction -->
     <form id="multiply"> <!-- Multiplication -->
       <div class="form-group">
@@ -43,7 +46,8 @@
         <label for="mul2">2nd number:</label>
         <input id="mul2" class="form-control" type="text">
       </div>
-      <button type="submit" class="btn">Multiply!</button>
+      <button type="submit" class="btn btn-primary">Multiply!</button>
+      <div><span id="output3"></span></div>
     </form> <!-- End Multiplication -->
         <form id="remainder"> <!-- Remainder -->
       <div class="form-group">
@@ -54,11 +58,11 @@
         <label for="remain2">2nd number:</label>
         <input id="remain2" class="form-control" type="text">
       </div>
-      <button type="submit" class="btn">Remainder!</button>
+      <button type="submit" class="btn btn-primary">Remainder!</button>
+      <div><span id="output4"></span></div>
     </form> <!-- End Remainder -->
-    <div id="output">
-
-    </div>
+    
+  </div>
     <script src="js/index.js"></script>
   </body>
 </html>

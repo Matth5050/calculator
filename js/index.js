@@ -32,7 +32,7 @@ $(document).ready(function() {
   const number1 = parseInt($("#sub1").val());
   const number2 = parseInt($("#sub2").val());
   const subtractResult = subtract(number1, number2);
-  $("#output").text(subtractResult);
+  $("#output2").text(subtractResult);
 });
 
 $("form#multiply").submit(function(event) {
@@ -40,7 +40,7 @@ $("form#multiply").submit(function(event) {
   const number1 = parseInt($("#mul1").val());
   const number2 = parseInt($("#mul2").val());
   const multiplyResult = multiply(number1, number2);
-  $("#output").text(multiplyResult);
+  $("#output3").text(multiplyResult);
 });
 
 $("form#remainder").submit(function(event) {
@@ -48,11 +48,8 @@ $("form#remainder").submit(function(event) {
   const number1 = parseInt($("#remain1").val());
   const number2 = parseInt($("#remain2").val());
   const remainderResult = remainder(number1, number2);
-  $("#output").text(remainderResult);
+  $("#output4").text(remainderResult);
 });
-
-
-
 });
 
 
